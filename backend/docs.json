@@ -1,0 +1,23 @@
+ 
+[
+  {
+    "title": "Reset Password",
+    "content": "Users can reset their password from Settings > Security > Reset Password. Enter your email and follow the link sent to your inbox."
+  },
+  {
+    "title": "Refund Policy",
+    "content": "Refunds are allowed within 7 days of purchase. Contact support@example.com with your order ID to initiate the process."
+  },
+  {
+    "title": "Account Deletion",
+    "content": "To delete your account, go to Settings > Account > Delete Account. This action is permanent and irreversible."
+  },
+  {
+    "title": "Subscription Plans",
+    "content": "We offer Free, Pro ($9/mo), and Enterprise ($49/mo) plans. Upgrade anytime from your Billing settings page."
+  },
+  {
+    "title": "Two-Factor Authentication",
+    "content": "Enable 2FA from Settings > Security > Two-Factor Auth. We support Google Authenticator apps and SMS verification."
+  }
+]
