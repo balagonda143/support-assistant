@@ -1,16 +1,26 @@
-# React + Vite
+## Frontend – Support Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite single‑page app that provides the chat interface for the Support Assistant backend.
 
-Currently, two official plugins are available:
+### Tech stack
+- **Framework**: React (with Vite)
+- **Styling**: Custom CSS for a compact, dark chat UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+- **Chat interface** with user/assistant bubbles and typing indicator.
+- **Suggested questions** to quickly try the assistant.
+- **Session management** using a UUID stored in `localStorage`, with a **New Chat** button to start a new conversation.
+- **Conversation history** loaded from the backend per session.
 
-## React Compiler
+### Setup
+1. `cd frontend`
+2. `npm install`
+3. `npm run dev`
+4. Open the URL printed by Vite (default `http://localhost:5173`).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Make sure the backend is running (default `http://localhost:3001`) so the chat can reach the API at `http://localhost:3001/api`.
 
-## Expanding the ESLint configuration
+### Configuration
+- The API base URL is defined in `src/components/ChatScreen.jsx` as `API = 'http://localhost:3001/api'`.
+- Change this constant if your backend runs on a different host or port.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
